@@ -186,12 +186,12 @@ h2 {
 /* SECTION BOUTONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#section-boutons, #section-autres {
+#section-boutons, #section-autres, #section-menus {
     color: #000;
     margin-bottom: 50px;
 }
 
-#section-boutons h2, #section-autres h2 {
+#section-boutons h2, #section-autres h2, #section-menus h2 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -980,6 +980,71 @@ svg {
 .btn-slice:hover:before{
     width: 130%;
 }
+
+/* SECTION MENUS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/***** MENU SPLICE *****/
+.menu-splice {
+    display: grid;
+    place-items: center;
+    background: rgb(2, 0, 36);
+    color: white;
+    height: 395px;
+    width: 450px;
+}
+
+.menu-splice ul {
+    list-style: none;
+}
+
+.menu-splice h3 {
+    font-size: 5rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.menu-splice h3:hover {
+    transform: skew(10deg);
+}
+
+.menu-splice h3::before {
+    content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	background: rgb(2, 0, 36);
+	height: 3rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 20px;
+}
+
+.menu-splice h3:hover::before {
+    top: -3px;
+    left: 0px;
+    color: hotpink;
+}
+
+.menu-splice h3::after {
+    content: "";
+	height: 4px;
+	width: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: hotpink;
+	transition: all 300ms ease;
+}
+
+.menu-splice h3:hover::after {
+    width: 120%;
+	outline: 5px solid rgb(2, 0, 36);
+} 
 
 /* SECTION AUTRES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

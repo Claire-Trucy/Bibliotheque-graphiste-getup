@@ -349,6 +349,59 @@
                     
                     <div class="background"></div>
                 </div>
+                <div class="day-night-toggle others">
+                    <input type="checkbox" id="toggle" class="toggle--checkbox">
+                    <label for="toggle" class="toggle--label">
+                    <span class="toggle--label-background"></span>
+                    </label>
+                    <div class="background"></div>
+                </div>
+                <div class="power-switch-btn others">
+                    <div class="power-switch">
+                        <input type="checkbox" />
+                        <div class="button">
+                          <svg class="power-off">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
+                          </svg>
+                          <svg class="power-on">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
+                          </svg>
+                        </div>
+                      </div>
+                      
+                      <!-- SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+                          <line x1="75" y1="34" x2="75" y2="58"/>
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+                          <circle cx="75" cy="80" r="35"/>
+                        </symbol>
+                      </svg>
+                </div>
+                <div class="bulb-switch others">
+                    <div class="switch-bubble">
+                        <input type="checkbox" name="toggle">
+                        <label for="toggle">
+                        <i class="bulb">
+                          <span class="bulb-center"></span>
+                          <span class="filament-1"></span>
+                          <span class="filament-2"></span>
+                          <span class="reflections">
+                            <span></span>
+                          </span>
+                          <span class="sparks">
+                            <i class="spark1"></i>
+                            <i class="spark2"></i>
+                            <i class="spark3"></i>
+                            <i class="spark4"></i>
+                          </span>
+                        </i>    
+                      </label>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

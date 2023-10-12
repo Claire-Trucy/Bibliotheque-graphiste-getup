@@ -3655,6 +3655,10 @@ body {
 /*********************** 
      SECTION SLIDER
 ***********************/
+.slider {
+  margin-bottom: 30px;
+}
+
 /***** DIAGONAL SLIDER *****/
 .header__main {
   position: relative;
@@ -3765,3 +3769,5 @@ body {
 }
 
 /***** END DIAGONAL SLIDER *****/
+/***** SLIDER TWO *****/
+/***** END SLIDER TWO *****/

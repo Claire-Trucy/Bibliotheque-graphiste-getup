@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="themes/classic/assets/css/style.css">
+    <link rel="stylesheet" href="themes/classic/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>Bibliothèque</title>
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <!-- <nav class="nav">
             <input id="menu" type="checkbox">
             <label for="menu">Menu</label>
             <ul class="menu">
@@ -43,11 +43,19 @@
                 </a>
               </li>
             </ul>
+        </nav> -->
+        <nav class="header-nav">
+          <ul id="menu">
+            <li id="boutons" class="active"><a href="#">Boutons</a></li>
+            <li id="menus"><a href="#">Menu</a></li>
+            <li id="autres"><a href="#">Autres</a></li>
+          </ul>
         </nav>
     </header>
     
+    
     <main>
-        <section id="section-boutons">
+        <section id="section-boutons" class="section-items active">
             <h2>Les boutons</h2>
             <div class="all-boutons">
                 <div class="btn btn-one">
@@ -134,7 +142,7 @@
             </div>
         </section>
 
-        <section id="section-menus">
+        <section id="section-menus" class="section-items">
             <h2>Menus</h2>
             <div class="all-menus">
                 <div class="menu-splice menus">
@@ -181,7 +189,7 @@
                 
             </div>
         </section>
-        <section id="section-autres">
+        <section id="section-autres" class="section-items">
             <h2>Autres</h2>
             <div class="all-others">
                 <div class="input-checkbox others">
@@ -405,8 +413,9 @@
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="themes/classic/assets/js/main.js"></script>
 </body>
 </html>
